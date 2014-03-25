@@ -1,37 +1,1 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Redirection -> GET to POST</title>
-</head>
-<body onload='document.getElementById("dogo").submit()'>
-<script>
-
-	allt = unescape(window.location.hash);
-
-	delar = allt.split('&&&');
-
-	url = delar[0].substr(1);
-
-	delara = delar[1].split('&');
-	
-	document.write('<form id="dogo" action="'+url+'" method="POST">');
-	
-	for (var i=0;i<delara.length;i++)
-	{
-		nov = delara[i].split("=");
-		document.write('<input  type="hidden" name="'+nov[0]+'" value="'+nov[1]+'" />');
-	}
-	document.write('</form>');
-
-</script>
-Loading...
-<!--
-
-gettopost.html#url&&&postfields=values&filesds=values
-
-#http://www.hlt.se/CM.php?PageID=85580&&&inpPointFr=Varberg+Station+%28T%E5g%29++%5BH%E5llplats%5D&inpPointTo=Varberg+Sjukhuset++%5BH%E5llplats%5D&selDirection=0&inpTime=1445&inpDate=140324&cmdAction=search&EU_Spirit=false&SupportsScript=true&Language=&LiteMode=true&Source=startpage&Redirect=1&inpPointFr_ajax=Varberg+Station+%28T%26aring%3Bg%29%7C6699%7C0&inpPointTo_ajax=Varberg+Sjukhuset%7C6544%7C0
-
-#http://193.45.213.123/halland/v2/querypage_adv.aspx&&&inpPointFr_ajax=Varberg+Station+%28Bussterm%29%7C6700%7C0&inpPointTo_ajax=Varberg+Sjukhuset%7C6544%7C0&inpPointInterm_ajax=&selRegionFr=741&inpPointFr=Varberg+Station+%28Bussterm%29++%5BH%E5llplats%5D&optTypeFr=0&inpPointTo=Varberg+Sjukhuset++%5BH%E5llplats%5D&optTypeTo=0&inpPointInterm=&selDirection=0&inpTime=14%3A09&inpDate=2014-03-24&optReturn=0&selDirection2=0&inpTime2=18%3A09&inpDate2=2014-03-24&trafficmask=1&trafficmask=2&trafficmask=4&Submit=S%F6k&selChangeTime=0&selWalkSpeed=0&selPriority=0&cmdAction=search&EU_Spirit=False&TNSource=HALLAND&SupportsScript=True&Language=se&VerNo=7.1.1.2.0.38p3&Source=querypage_adv&MapParams=
--->
-</body>
-</html>
+<!DOCTYPE html><html>  <head>    <meta content="text/html; charset=windows-1252" http-equiv="content-type">    <title>Redirection -&gt; GET to POST</title>  </head>  <body onload='document.getElementById("dogo").submit()'>    <script>	allt = unescape(window.location.hash);	delar = allt.split('&&&');	url = delar[0].substr(1);	delara = delar[1].split('&');		document.write('<form id="dogo" action="'+url+'" method="POST">');		for (var i=0;i<delara.length;i++)	{		nov = delara[i].split("=");		document.write('<input  type="hidden" name="'+nov[0]+'" value="'+nov[1]+'" />');	}	document.write('</form>');</script>Loading...<br>    <h1>Documentation:</h1>    <p>Usage:      gettopost.html#url&amp;&amp;&amp;postfield1=value1&amp;postfield2=value2<br>      gettopost.html = Scriptname<br>      # = Divider to the data to use for the POST request<br>      url = the url including any GET fields.<br>      &amp;&amp;&amp; = divider for the data to be POSTed.<br>      postfieldN = the fieldname to be POSTed.<br>      valueN = the value to be POSTed.</p>    <h1>Example:</h1>    <p>http://thuma.github.io/gettopost.html#http://193.45.213.123/halland/v2/querypage_adv.aspx&amp;&amp;&amp;inpPointFr_ajax=Varberg+Station+%28Bussterm%29%7C6700%7C0&amp;inpPointTo_ajax=Varberg+Sjukhuset%7C6544%7C0&amp;inpPointInterm_ajax=&amp;selRegionFr=741&amp;inpPointFr=Varberg+Station+%28Bussterm%29++%5BH%E5llplats%5D&amp;optTypeFr=0&amp;inpPointTo=Varberg+Sjukhuset++%5BH%E5llplats%5D&amp;optTypeTo=0&amp;inpPointInterm=&amp;selDirection=0&amp;inpTime=14%3A09&amp;inpDate=2014-03-24&amp;optReturn=0&amp;selDirection2=0&amp;inpTime2=18%3A09&amp;inpDate2=2014-03-24&amp;trafficmask=1&amp;trafficmask=2&amp;trafficmask=4&amp;Submit=S%F6k&amp;selChangeTime=0&amp;selWalkSpeed=0&amp;selPriority=0&amp;cmdAction=search&amp;EU_Spirit=False&amp;TNSource=HALLAND&amp;SupportsScript=True&amp;Language=se&amp;VerNo=7.1.1.2.0.38p3&amp;Source=querypage_adv&amp;MapParams=    </p>  </body></html>
