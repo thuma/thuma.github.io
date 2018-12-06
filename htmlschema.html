@@ -1,0 +1,131 @@
+<html>
+<head>
+<style>
+
+table.sh {
+    border-collapse: collapse;
+}
+
+table.sh tr {
+
+}
+
+table.sh tr td {
+ width:99px;
+ height:99px;
+ padding:0px;
+ text-align: center;
+ vertical-align: bottom;
+}
+
+table.sh tr td.vert {
+	transform: rotate(90deg);
+}
+
+table.sh tr td.r-vert {
+	transform: rotate(-90deg);
+}
+
+table.sh tr td.bat {
+	background-image:url("batt.png");
+}
+
+table.sh tr td.l-d-corner {
+	background-image:url("corner.png");
+}
+
+table.sh tr td.r-d-corner {
+	background-image:url("corner.png");
+    transform: rotate(90deg);
+}
+
+table.sh tr td.l-u-corner {
+	background-image:url("corner.png");
+    transform: rotate(180deg);
+}
+
+table.sh tr td.r-u-corner {
+	background-image:url("corner.png");
+    transform: rotate(270deg);
+}
+
+table.sh tr td.line {
+	background-image:url("horiz.png");
+}
+
+table.sh tr td.resistor {
+	background-image:url("resistor.png");
+}
+
+table.sh tr td.fuse {
+	background-image:url("fuse.png");
+}
+
+table.sh tr td.conn {
+	background-image:url("connection.png");
+}
+
+table.sh tr td.lamp {
+	background-image:url("lamp.png");
+}
+
+table.sh tr td.ohm {
+	background-image:url("ohm.png");
+}
+
+table.sh tr td.volt {
+	background-image:url("volt.png");
+}
+
+table.sh tr td.amp {
+	background-image:url("amp.png");
+}
+
+</style>
+</head>
+<body>
+
+<table class="sh">
+<tr>
+	<td class="l-d-corner">
+	</td>
+	<td class="bat">
+	</td>
+	<td class="line">
+	</td>
+	<td class="r-d-corner">
+	</td>
+</tr>
+<tr>
+	<td class="line vert">
+	</td>
+	<td>
+	</td>
+	<td>	
+	</td>
+	<td class="line vert">
+	</td>
+</tr>
+<tr>
+	<td class="conn r-vert">
+	</td>
+	<td class="resistor">R1
+	</td>
+	<td class="amp">
+	</td>
+	<td class="conn vert">
+	</td>
+</tr>
+<tr>
+	<td class="r-u-corner">
+	</td>
+	<td class="resistor">R2
+	</td>
+	<td class="resistor">R3
+	</td>
+	<td class="l-u-corner">
+	</td>
+</tr>
+</table>
+</body>
+</html>
