@@ -18,6 +18,10 @@ table.sh tr td.r-vert {
 	transform: rotate(-90deg);
 }
 
+table.sh tr td.u-vert {
+	transform: rotate(180deg);
+}
+
 table.sh tr td.bat {
 	background-image:url("//ifa.thure.org/batt.png");
 }
