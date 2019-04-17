@@ -1,0 +1,69 @@
+table.pvalve { 
+	border-collapse: collapse;
+	empty-cells: show;
+	}
+table.pvalve td { 
+	background-size: cover;
+	padding: 0px;
+	}
+table.pvalve td.valve { 
+	border-width:2px;
+	border-style: solid;
+	}
+table.pvalve td.control {
+	border-width:0px;
+	width:40px;
+	height:40px;
+	}
+table.pvalve td.right{
+	transform: rotate(180deg);
+	}
+table.pvalve td.valve{
+	height:80px;
+	width:80px;
+}
+table.pvalve td.control.button {
+	background-image: url("button.png");
+}
+table.pvalve td.control.penaumatic {
+	background-image: url("pneumatic.png");
+}
+table.pvalve td.control.roll {
+	background-image: url("roll.png");
+}
+table.pvalve td.control.spring {
+	background-image: url("spring.png");
+}
+table.pvalve td.control.pilot {
+	background-image: url("pilot.png");
+}
+table.pvalve td.control.coil {
+	background-image: url("coil.png");
+}
+table.pvalve td.valve.v5a {
+	background-image: url("5a.png");
+}
+table.pvalve td.valve.v5b {
+	background-image: url("5b.png");
+}
+table.pvalve td.valve.v5x {
+	background-image: url("5x.png");
+}
+table.pvalve td.valve.v5f {
+	background-image: url("5f.png");
+}
+table.pvalve td.valve.v3a {
+	background-image: url("3a.png");
+}
+table.pvalve td.valve.v3b {
+	background-image: url("3b.png");
+}
+table.pvalve td.valve.v3x {
+	background-image: url("3x.png");
+}
+table.pvalve td.valve.v2c {
+	background-image: url("2c.png");
+}
+table.pvalve td.valve.v2o {
+	background-image: url("2o.png");
+}
