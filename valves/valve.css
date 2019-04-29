@@ -40,6 +40,15 @@ table.pvalve td.control.pilot {
 table.pvalve td.control.coil {
 	background-image: url("coil.png");
 }
+table.pvalve td.valve.v4a {
+	background-image: url("4a.png");
+}
+table.pvalve td.valve.v4b {
+	background-image: url("4b.png");
+}
+table.pvalve td.valve.v4x {
+	background-image: url("4x.png");
+}
 table.pvalve td.valve.v5a {
 	background-image: url("5a.png");
 }
