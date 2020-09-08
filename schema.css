@@ -57,6 +57,10 @@ table.sh tr td.fuse {
 	background-image:url("//ifa.thure.org/fuse.png");
 }
 
+table.sh tr td.breaker {
+	background-image:url("//ifa.thure.org/breaker.png");
+}
+
 table.sh tr td.conn {
 	background-image:url("//ifa.thure.org/connection.png");
 }
