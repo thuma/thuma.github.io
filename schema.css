@@ -26,6 +26,10 @@ table.sh tr td.bat {
 	background-image:url("//ifa.thure.org/batt.png");
 }
 
+table.sh tr td.power {
+	background-image:url("//ifa.thure.org/power.png");
+}
+
 table.sh tr td.l-d-corner {
 	background-image:url("//ifa.thure.org/corner.png");
 }
